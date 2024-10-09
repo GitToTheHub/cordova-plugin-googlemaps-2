@@ -139,30 +139,9 @@ public class AsyncLoadImage extends AsyncTask<Void, Void, AsyncLoadImage.AsyncLo
 
     //View browserView = webView.getView();
     //String browserViewName = browserView.getClass().getName();
+    // TODO: Why is set to "Mozilla"?
     this.userAgent = "Mozilla";
-
-    /*
-    if("org.xwalk.core.XWalkView".equals(browserViewName) ||
-        "org.crosswalk.engine.XWalkCordovaView".equals(browserViewName)) {
-
-      CordovaPreferences preferences = webView.getPreferences();
-      // Set xwalk webview settings by Cordova preferences.
-      String xwalkUserAgent = preferences == null ? "" : preferences.getString("xwalkUserAgent", "");
-      if (!xwalkUserAgent.isEmpty()) {
-        this.userAgent = xwalkUserAgent;
-      }
-
-      String appendUserAgent = preferences.getString("AppendUserAgent", "");
-      if (!appendUserAgent.isEmpty()) {
-        this.userAgent = this.userAgent + " " + appendUserAgent;
-      }
-      if ("".equals(this.userAgent)) {
-        this.userAgent = "Mozilla";
-      }
-    } else {
-      this.userAgent = ((WebView) webView.getEngine().getView()).getSettings().getUserAgentString();
-    }
-    */
+    // this.userAgent = ((WebView) webView.getEngine().getView()).getSettings().getUserAgentString();
 
   }
 
