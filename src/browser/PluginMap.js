@@ -137,6 +137,11 @@ function PluginMap(mapId, options) {
     };
 
     if (options) {
+
+      if (options.mapId) {
+        mapInitOptions.mapId = options.mapId;
+      }
+
       if (options.mapType) {
         mapInitOptions.mapTypeId = MAP_TYPES[options.mapType];
       }
