@@ -797,10 +797,10 @@ CordovaGoogleMaps.prototype.getMap = function(div, mapOptions) {
       elemId = common.getPluginDomId(newDiv);
       self.domPositions[elemId].isMap = true;
 
-      background = background || '#FFFFFFFF';
+      background = background || '#FFFFFF';
       console.log(`background = ${background}`);
       background = common.HTMLColor2RGBA(background);
-      plugin.google.maps.environment.setBackgroundColor(background);
+      // plugin.google.maps.environment.setBackgroundColor(background);
     }
   };
 
