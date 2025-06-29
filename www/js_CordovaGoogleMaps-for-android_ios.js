@@ -748,25 +748,16 @@ CordovaGoogleMaps.prototype.getMap = function(div, mapOptions) {
       }
     }
 
-    var background = undefined;
     if (common.isDom(newDiv)) {
 
       elemId = common.getPluginDomId(newDiv);
 
       elem = newDiv;
       var isCached;
-      var bg;
       while(elem && elem.nodeType === Node.ELEMENT_NODE) {
         elemId = common.getPluginDomId(elem);
         if (common.shouldWatchByNative(elem)) {
           if (!common.hasTransparentClass(elem)) {
-            bg = common.getStyle(elem, '--background');
-            if (!bg) {
-              bg = common.getStyle(elem, 'background-color');
-            }
-            bg = (bg || "").trim();
-            background = background || bg;
-
             // Add _gmaps_cdv_ class
             common.attachTransparentClass(elem);
           }
