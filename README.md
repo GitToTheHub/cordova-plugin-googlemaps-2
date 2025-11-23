@@ -65,9 +65,9 @@ Cloning into 'cocoapods'...
 If this task takes a huge amount of time, you could have a bad internet connection.
 
 #### Deprecation of CocoaPods
-CocoaPods is [deprecated](https://blog.cocoapods.org/CocoaPods-Specs-Repo/) and will be a read-only respository after 2. December 2026. Google will support CocoaPods [till Sommer 2026](https://developers.google.com/maps/documentation/ios-sdk/config#cocoapods). After that, no updates will be published to CocoaPods and instead Swift Package Manager has to be used to continue receiving updates. The next upcoming [cordova-ios 8](https://cordova.apache.org/announcements/2024/10/21/cordova-ios-8.1.1-beta.1.html) will support [Swift Package Manager](https://cordova.apache.org/docs/en/dev/guide/platforms/ios/plugin.html#supporting-swift-package-manager-spm) but is not released yet. When it is released, this plugin will begin to switch to Swift Package Manager.
+CocoaPods is deprecated and will be a [read-only respository after 2. December 2026](https://blog.cocoapods.org/CocoaPods-Specs-Repo/). Google will support CocoaPods [till Sommer 2026](https://developers.google.com/maps/documentation/ios-sdk/config#cocoapods). After that, no updates will be published to CocoaPods and instead Swift Package Manager (SPM) has to be used to continue receiving updates. [cordova-ios 8](https://cordova.apache.org/announcements/2025/11/23/cordova-ios-8.0.0.html) supports [Swift Package Manager](https://cordova.apache.org/docs/en/dev/guide/platforms/ios/plugin.html#supporting-swift-package-manager-spm) and the plugin is already compatible with it, but, to not break support with cordova-ios 7, this plugin still uses CocoaPods and will migrate later to Swift Package Manager.
 
-#### Upgrade from original `cordova-plugin-googlemaps` repository
+#### Upgrade from `cordova-plugin-googlemaps` repository
 To upgrade from plugin version 2.7.1 from the old reposiotry to Version 2.8.0 or newer of this respository you have to remove the old plugin and old iOS Google Map dependency:
 
 ```bash
