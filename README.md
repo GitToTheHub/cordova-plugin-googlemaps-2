@@ -64,7 +64,7 @@ Cloning into 'cocoapods'...
 
 If this task takes a huge amount of time, you could have a bad internet connection.
 
-#### Deprecation of CocoaPods
+#### Migration from CocoaPods to Swift Package Manager in the future
 CocoaPods is deprecated and will be a [read-only respository after 2. December 2026](https://blog.cocoapods.org/CocoaPods-Specs-Repo/). Google will support CocoaPods [till Sommer 2026](https://developers.google.com/maps/documentation/ios-sdk/config#cocoapods). After that, no updates will be published to CocoaPods and instead Swift Package Manager (SPM) has to be used to continue receiving updates. [cordova-ios 8](https://cordova.apache.org/announcements/2025/11/23/cordova-ios-8.0.0.html) supports [Swift Package Manager](https://cordova.apache.org/docs/en/dev/guide/platforms/ios/plugin.html#supporting-swift-package-manager-spm) and the plugin is already compatible with it, but, to not break support with cordova-ios 7, this plugin still uses CocoaPods and will migrate later to Swift Package Manager.
 
 #### Upgrade from `cordova-plugin-googlemaps` repository
