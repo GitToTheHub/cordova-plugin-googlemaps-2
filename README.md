@@ -1,12 +1,30 @@
 # Cordova GoogleMaps plugin for Android, iOS and Browser version 2.9.3-dev
 
-This is the continuation of the discontinued plugin [cordova-plugin-googlemaps](https://github.com/mapsplugin/cordova-plugin-googlemaps).
+This is the successor of [cordova-plugin-googlemaps](https://github.com/mapsplugin/cordova-plugin-googlemaps).
 
 This plugin allows you to display a native Google Maps layer in your application and uses the following libraries:
 
 - Android: [Google Maps Android API](https://developers.google.com/maps/documentation/android/)
 - iOS: [Google Maps SDK for iOS](https://developers.google.com/maps/documentation/ios/)
 - Browser: [Google Maps JavaScript API v3](https://developers.google.com/maps/documentation/javascript/)
+
+## Why Use This Plugin?
+
+This plugin allows Cordova apps to use the native Google Maps SDK for iOS and Android instead of the Google Maps JavaScript API. Using the native SDK offers several important advantages:
+
+- High performance: The map is rendered as a native GPU-accelerated view, delivering smooth animations, fast interactions, and excellent performance even with many markers or overlays.
+- Native touch gestures: Pinch-to-zoom, rotation, and panning behave exactly like in a fully native app, without conflicts with the WebView.
+- Mobile-first experience: The map feels and responds like a real native component, giving your app a more polished and professional user experience.
+- Access to native features: Includes capabilities not available in the JS API, such as vector maps, indoor maps, native “My Location” controls, better marker handling, and offline caching.
+- Scales for complex use cases: Ideal for apps that need real-time tracking, many overlays, high interaction frequency, or advanced map features.
+- Restrict access to your API key by the package name of your app.
+
+If your app only needs a simple, static map, the Google Maps JavaScript API may be sufficient. But if you want performance, smooth gestures, native behavior, and advanced map capabilities, the native SDK provides a clearly superior experience.
+
+In Browser platform, this plugin uses Google Maps JavaScript API. It should work as PWA (progressive web application), but the device has to be online.
+
+In order to work for all platforms, this plugin provides own API instead of each original APIs. You can write your code similar to the Google Maps JavaScript API.
+You can read more about here [What is the difference between this plugin and Google Maps JavaScript API v3?](#what-is-the-difference-between-this-plugin-and-google-maps-javascript-api-v3)
 
 ## Guides
 
